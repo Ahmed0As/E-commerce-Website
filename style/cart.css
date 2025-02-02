@@ -1,0 +1,150 @@
+/* Start Cart */
+.cart {
+    margin-top: 8rem;
+    overflow-x: auto;
+}
+
+.cart .container table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+}
+
+.cart .container table thead {
+    border: .1rem solid #e2e9e1;
+    border-left: none;
+    border-right: none;
+}
+
+.cart .container table thead td {
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.cart .container table td {
+    padding: 1rem;
+    text-align: center;
+}
+
+.cart .container table td:nth-child(1) {
+    width: 100px;
+}
+
+.cart .container table td:nth-child(2) {
+    width: 150px;
+}
+
+.cart .container table td:nth-child(3) {
+    width: 250px;
+}
+
+.cart .container table td:nth-child(4),
+.cart .container table td:nth-child(5) {
+    width: 250px;
+}
+.cart .container table td:nth-child(6) {
+    width: 100px;
+} 
+
+.cart .container table tbody tr {
+    border-bottom: .1rem solid #e2e9e1;
+}
+
+.cart .container table tbody tr td i {
+    width: 2rem;
+    height: 2rem;
+    padding: .5rem;
+    color: red;
+    border: .1rem solid red;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.cart .container table tbody tr td img {
+    width: 50%;
+}
+
+.cart .container table tbody tr td input {
+    display: block;
+    width: 4.5rem;
+    margin: auto;
+    padding: 1rem;
+    border: .1rem solid;
+}
+/* End Cart */
+
+/* Start Add */
+.add {}
+
+.add .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 4rem;
+}
+
+.add .container .left {
+    flex: 1;
+}
+
+.add .container .left input {
+    width: 60%;
+    margin-top: 1.5rem;
+    padding: 1rem;
+    border: .1rem solid #e2e9e1;
+}
+
+.add .container .btn {
+    margin-top: 1rem;
+    margin-left: 1rem;
+    padding: 1rem 2rem;
+    color: #fff;
+    background-color: var(--main-color);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.add .container .right {
+    flex: 1;
+    padding: 1.7rem 1.2rem;
+    border: .1rem solid #e2e9e1;
+}
+
+.add .container .right h3 {
+    margin-bottom: 1.5rem;
+}
+
+.add .container .right table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+    white-space: nowrap;
+    text-align: center;
+}
+
+.add .container .right table tr td {
+    padding: .7rem 1rem;
+    border: .1rem solid #e2e9e1;
+}
+
+.add .container .right .btn {
+    margin-top: 1rem;
+    margin-left: 0;
+}
+@media (max-width: 600px) {
+    .add .container {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .add .container .left,
+    .add .container .right {
+        width: 100%;
+    }
+
+    .add .container input {
+        width: 100% !important;
+    }
+}
+/* End Add */

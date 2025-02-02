@@ -1,0 +1,111 @@
+/* Start Sproduct */
+.sproduct {
+    margin-top: 10rem;
+}
+
+.sproduct .container {
+    display: flex;
+    gap: 4rem;
+}
+
+.sproduct .container .left {
+    width: 50%;
+}
+
+.sproduct .container .left .image-container .main-image {
+    flex: 1;
+    width: 100%;
+}
+
+.sproduct .container .left .image-container .main-image > img {
+    width: 100%;
+}
+
+.sproduct .container .left .image-container .secondry-image  {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sproduct .container .left .image-container .secondry-image .image {
+    flex-basis: 24%;
+    cursor: pointer;
+}
+
+.sproduct .container .left .image-container .secondry-image img {
+    width: 100%;
+}
+
+.sproduct .container .right {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2rem;
+}
+
+.sproduct .container .right h4 {
+    font-size: .9rem;
+}
+
+.sproduct .container .right select {
+    width: fit-content;
+    padding: .7rem ;
+    border: .1rem solid #000;
+}
+
+.sproduct .container .right input {
+    width: 10%;
+    height: 3rem;
+    padding: .6rem 0 .6rem .5rem;
+    border: .1rem solid #000;
+}
+
+.sproduct .container .right button {
+    width: fit-content;
+    height: 3rem;
+    margin-left: 1rem;
+    padding: 0 2rem;
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: .5rem;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.sproduct .container .right .foot h3 {
+    margin: 1rem 0;
+}
+
+.sproduct .container .right .foot p {
+    color: #465b52;
+    line-height: 1.7;
+}
+
+@media (max-width: 800px) {
+    .sproduct .container {
+        align-items: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .section-p1 {
+        padding: 20px 0;
+    }
+
+    .sproduct .container {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .sproduct .container .left,
+    .sproduct .container .right {
+        width: 100%;
+    }
+
+    .title {
+        padding: 0 1rem;
+    }
+}
+/* End Sproduct */
